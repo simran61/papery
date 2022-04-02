@@ -1,0 +1,14 @@
+.product {
+  max-width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.product_cart {
+  background-color: var(--primary-color);
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.product_cart:hover {
+  background-color: var(--grey-color);
+}

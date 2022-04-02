@@ -1,0 +1,32 @@
+.newsletter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--light-grey-color);
+  border-bottom: 1px dashed var(--dull-black);
+  border-top: 1px dashed var(--dull-black);
+}
+
+.side_heading {
+  max-width: 23%;
+}
+
+.newsletter_content h3 {
+  padding-bottom: 2rem;
+}
+
+.search > input {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  width: 20rem;
+  border-radius: 2rem;
+  background-color: var(--white-color) !important;
+}
+
+.btn_subs {
+  position: absolute;
+  right: 0;
+  top: 0.3rem;
+  padding: 0.9rem 2rem;
+}

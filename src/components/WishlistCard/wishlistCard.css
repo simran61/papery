@@ -1,0 +1,8 @@
+.btn_primary:hover,
+.btn_quan:hover {
+  background-color: var(--dark-primary-color);
+}
+
+.img_bg {
+  background-color: red;
+}

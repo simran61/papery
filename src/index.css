@@ -1,13 +1,242 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inspiration&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --dark-primary-color: #548379;
+  --primary-color: #72a499;
+  --light-primary-color: #96ccc0;
+  --light-bg-color: rgb(233, 243, 243);
+  --white-color: white;
+  --black-color: black;
+  --dull-black: rgb(53, 52, 52);
+  --light-grey-color: #ececec;
+  --dull-white-color: #eceaea;
+  --grey-color: #9c9c9c;
+  --dark-grey-color: rgb(124, 123, 123);
+  --danger-color: rgb(189, 3, 3);
+  --yellow-color: rgb(236, 236, 15);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dull-black);
+  z-index: 5;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: block;
+}
+
+.space_btw {
+  justify-content: space-between;
+}
+
+.space_around {
+  justify-content: space-around;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.mr_sm {
+  margin: 0 0.5rem;
+}
+
+.pd_lr_sm {
+  padding: 0 0.5rem;
+}
+
+.pd_sm {
+  padding: 1rem;
+}
+
+.pd_md {
+  padding: 2rem;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.color_primary {
+  color: var(--primary-color);
+}
+
+.light_primary_color {
+  color: var(--light-primary-color);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.size_md {
+  font-size: 1.5rem;
+}
+
+.active {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.padding_lr_md {
+  padding: 0 4rem;
+}
+
+.cursive {
+  font-family: "Clicker Script", cursive;
+  font-size: 4rem;
+}
+
+.txt_sm {
+  font-size: 0.5rem;
+}
+
+.margin_sm {
+  margin: 0.7rem 0.7rem 0.4rem 0.7rem;
+}
+
+.margin_top {
+  margin-top: 0.3rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.bg_danger_color {
+  background-color: var(--danger-color);
+}
+
+.danger_color {
+  color: var(--danger-color);
+}
+
+.bg_primary_color {
+  background-color: var(--primary-color);
+}
+
+.bg_light_primary_color {
+  background-color: var(--light-primary-color);
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.grey_text {
+  color: var(--grey-color);
+}
+
+.dark_grey_text {
+  color: var(--dark-grey-color);
+}
+
+.mr_1 {
+  margin: 1rem;
+}
+
+.pd_1_tb {
+  padding: 1rem 0;
+}
+
+.mr_2 {
+  margin: 2rem;
+}
+
+.mr_3 {
+  margin: 3rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex_15 {
+  flex-basis: 15%;
+}
+
+.flex_20 {
+  flex-basis: 20%;
+}
+
+.flex_30 {
+  flex-basis: 30%;
+}
+
+.flex_40 {
+  flex-basis: 40%;
+}
+
+.flex_50 {
+  flex-basis: 50%;
+}
+
+.inline {
+  display: inline;
+}
+
+.size_sm {
+  font-size: 1.3rem;
+}
+
+.size_xl {
+  font-size: 5rem;
+}
+
+.pd_tb_6 {
+  padding: 6rem 0;
+}
+
+.dull_black {
+  color: var(--dull-black);
+}
+
+.btn_ecom {
+  border: none;
+  outline: none;
+  background-color: var(--dull-black);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+
+.yellow {
+  color: var(--yellow-color);
+}
+
+.mr_tb_sm {
+  margin: 0.3rem 0;
+}
+
+.mr_tb_sm1 {
+  margin: 0.5rem 0;
+}
+
+.mr_tb_md {
+  margin: 1rem 0;
+}
+
+.gap_0_5 {
+  gap: 0.5rem;
+}
+
+input {
+  accent-color: var(--primary-color);
+}
+
+.pd_0 {
+  padding: 0;
 }

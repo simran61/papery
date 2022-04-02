@@ -1,0 +1,21 @@
+.auth_box {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  width: 50%;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.3rem 0 1.2rem 0;
+  display: inline-block;
+  border: none;
+  background: var(--light-grey-color);
+}
+
+input[type="text"]:focus {
+  background-color: var(--light-primary-color);
+  outline: none;
+}
