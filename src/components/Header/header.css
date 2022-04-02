@@ -1,0 +1,27 @@
+.right_full {
+    grid-area: right;
+}
+
+.left_top {
+    grid-area: leftTop;
+}
+
+.left_bottom {
+    grid-area: leftBottom;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'right right leftTop leftTop' 
+    'right right leftTop leftTop'
+    'right right leftBottom leftBottom'
+    'right right leftBottom leftBottom';
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.grid-container>img{
+    width: auto;
+    height: 100%;
+}

@@ -1,0 +1,19 @@
+.price_table {
+  background-color: var(--light-bg-color);
+  width: 25rem;
+  height: fit-content;
+  /* position: fixed; */
+  /* right: 2rem; */
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 0.5rem;
+}

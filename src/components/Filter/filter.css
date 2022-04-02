@@ -1,0 +1,56 @@
+.filters {
+  background-color: var(--light-bg-color);
+  flex-basis: 20%;
+}
+
+.search_product > input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
+.search_product {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--grey-color);
+}
+
+table {
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.filter_headings {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0.5rem 0.5rem;
+}
+
+.chechbox_text,
+.radio_text {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.box {
+  width: 95%;
+}
+
+.rangeSlider {
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+}
+
+.filter_btn {
+  padding: 1rem 0 0 0;
+  margin: 0;
+}

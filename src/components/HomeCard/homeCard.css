@@ -1,0 +1,50 @@
+.product_img{
+    height: 18rem;
+    width: 15rem;
+    background-color: var(--light-grey-color);
+}
+
+.product_img {
+    overflow: hidden;
+}
+
+.product_img img {
+    margin-top: 2rem;
+    width: 13.125rem;
+    transition: 0.5s all ease-in-out;
+}
+
+.product_img:hover img {
+    transform: scale(1.3);
+}
+
+.product_heart{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+/* .badge{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 100%;
+    height: 2.313rem;
+    width: 2.313rem;
+    font-size: 0.9rem;
+    color: white;
+    padding: 0.5rem 0;
+} */
+/* 
+.outStock_product{
+    left: 4rem;
+    background-color: var(--dark-grey-color);
+    font-size: 1.5rem;
+    padding: 0.15rem;
+}
+
+.p_discount_price{
+    display: inline-block;
+    margin-right: 0.5rem;
+} */

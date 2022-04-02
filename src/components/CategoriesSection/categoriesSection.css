@@ -1,0 +1,30 @@
+.leaf_right{
+    position: absolute;
+    width: 6.25rem;
+    top: 2rem;
+    right: 28rem;
+}
+
+.leaf_left{
+    position: absolute;
+    width: 6.25rem;
+    top: 2rem;
+    left: 28rem;
+}
+
+.cursive{  
+    font-family: 'Clicker Script', cursive;
+    font-size: 4rem;
+}
+
+.filter_tabs{
+    padding: 2rem 0;
+    width: 40%;
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+}
+
+.show_products{
+    padding: 0 4rem;
+    gap: 1rem;
+}

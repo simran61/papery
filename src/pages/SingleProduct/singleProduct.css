@@ -1,0 +1,29 @@
+.singleProduct_img {
+  height: 25rem;
+  width: 25rem;
+}
+
+.singleProduct_img img {
+  margin-top: 2rem;
+  width: 18rem;
+}
+
+.badge {
+  color: var(--white-color);
+}
+
+.product_heart {
+  font-size: 2rem;
+}
+
+.product {
+  flex-basis: 60%;
+  text-align: left;
+}
+
+.btn_ecomm_outline {
+  background-color: transparent;
+  border: 2px solid var(--dull-black);
+  color: var(--dull-black);
+  font-weight: 900;
+}
