@@ -11,53 +11,12 @@ import {
   product7,
   product8,
 } from "../../assets";
+import { useFilter } from "../../context/filter-context";
 import { HomeCard } from "../HomeCard/HomeCard";
 import "./categoriesSection.css";
 
-let data = [
-  {
-    itemName: "Girlish Papery",
-    price: "$15.75",
-    imgURL: product1,
-  },
-  {
-    itemName: "Elegence Papery",
-    price: "$21.50",
-    imgURL: product2,
-  },
-  {
-    itemName: "Love Papery",
-    price: "$10.25",
-    imgURL: product3,
-  },
-  {
-    itemName: "The Baker Papery",
-    price: "$11.75",
-    imgURL: product4,
-  },
-  {
-    itemName: "Pinkish Papery",
-    price: "$18.75",
-    imgURL: product5,
-  },
-  {
-    itemName: "Butterfly Papery",
-    price: "$15.75",
-    imgURL: product6,
-  },
-  {
-    itemName: "Smallish Gratitude Papery",
-    price: "$5.75",
-    imgURL: product7,
-  },
-  {
-    itemName: "Peach Nature Papery",
-    price: "$15.75",
-    imgURL: product8,
-  },
-];
-
 function CategoriesSection() {
+  const { productState } = useFilter();
   return (
     <section>
       <div>
@@ -73,7 +32,7 @@ function CategoriesSection() {
         </div>
 
         <div className="show_products flex space_btw">
-          {data.map((item) => (
+          {productState.product.map((item) => (
             <HomeCard item={item} />
           ))}
         </div>

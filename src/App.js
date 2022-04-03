@@ -12,24 +12,26 @@ import Mockman from "mockman-js";
 function App() {
   return (
     <div className="App">
-      <Nav/>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="about" element={<About />} /> */}
-        <Route path="productListing" element={<ProductListing />} />
+        <Route path="/productListing" element={<ProductListing />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/mockman" element={<Mockman />} />
         {/* <Route path="about" element={<About />} /> */}
         {/* <Route path="about" element={<About />} /> */}
       </Routes>
-    {/* <Home/> */}
-    {/* <ProductListing/> */}
-    {/* <SingleProduct/> */}
-    {/* <Wishlist/> */}
-    {/* <Cart/> */}
-    {/* <Login/> */}
-    {/* <Logout/> */}
-    {/* <SignUp/> */}
-    <Footer/>
+      {/* <Home/> */}
+      {/* <ProductListing/> */}
+      {/* <SingleProduct/> */}
+      {/* <Wishlist/> */}
+      {/* <Cart/> */}
+      {/* <Login/> */}
+      {/* <Logout/> */}
+      {/* <SignUp/> */}
+      <Footer />
     </div>
   );
 }

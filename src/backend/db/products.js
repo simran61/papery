@@ -23,6 +23,8 @@ export const products = [
     price: 15.75,
     rating: 2.5,
     imgURL: product1,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
   {
     _id: uuid(),
@@ -31,6 +33,8 @@ export const products = [
     price: 21.5,
     rating: 3.5,
     imgURL: product2,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
   {
     _id: uuid(),
@@ -40,6 +44,8 @@ export const products = [
     price: 10.25,
     rating: 1,
     imgURL: product3,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
   {
     _id: uuid(),
@@ -48,6 +54,8 @@ export const products = [
     price: 11.75,
     rating: 4.7,
     imgURL: product4,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
   {
     _id: uuid(),
@@ -56,6 +64,8 @@ export const products = [
     price: 18.75,
     rating: 5,
     imgURL: product5,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
   {
     _id: uuid(),
@@ -64,6 +74,8 @@ export const products = [
     price: 15.75,
     rating: 2.5,
     imgURL: product6,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
   {
     _id: uuid(),
@@ -72,6 +84,8 @@ export const products = [
     category: "Cards",
     rating: 4.9,
     imgURL: product7,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
   {
     _id: uuid(),
@@ -80,6 +94,8 @@ export const products = [
     category: "Notebooks",
     rating: 2.8,
     imgURL: product8,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
   {
     _id: uuid(),
@@ -88,5 +104,7 @@ export const products = [
     price: 12.5,
     rating: 3.5,
     imgURL: product9,
+    isWishlisted: false,
+    isAddedToCart: false,
   },
 ];
