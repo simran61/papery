@@ -1,23 +1,48 @@
 import React from "react";
 import { product1 } from "../../assets";
+import { useFilter } from "../../context/filter-context";
 import "./cartCard.css";
 
-function CartCard() {
+function CartCard({ item }) {
+  const { productDispatch } = useFilter();
+  const { _id, itemName, price, imgURL, rating, category, isWishlisted } = item;
+
   return (
     <div class="card card7">
       <div class="section1">
         <div class="c7_card_img img_bg">
-          <img src={product1} alt="" />
+          <img src={imgURL} alt="" />
         </div>
         <div class="card_headings padding_sm">
-          <h3>Elegency Memorable Photobook</h3>
-          <span class="original_price grey_text">$20.15</span>
-          <span class="discount_price">$11.75</span>
+          <h3>{itemName}</h3>
+          {/* <span class="original_price grey_text">$20.15</span> */}
+          <span class="discount_price">${price}</span>
           <div class="rating">
-            <i class="yellow fas fa-star"></i>
-            <i class="yellow fas fa-star"></i>
-            <i class="yellow fas fa-star"></i>
-            <i class="yellow fas fa-star-half"></i>
+            <i
+              class={`yellow fa-star ${
+                rating >= 1 ? "fa-solid" : "fa-regular"
+              }`}
+            ></i>
+            <i
+              class={`yellow fa-star ${
+                rating >= 2 ? "fa-solid" : "fa-regular"
+              }`}
+            ></i>
+            <i
+              class={`yellow fa-star ${
+                rating >= 3 ? "fa-solid" : "fa-regular"
+              }`}
+            ></i>
+            <i
+              class={`yellow fa-star ${
+                rating >= 4 ? "fa-solid" : "fa-regular"
+              }`}
+            ></i>
+            <i
+              class={`yellow fa-star ${
+                rating >= 5 ? "fa-solid" : "fa-regular"
+              }`}
+            ></i>
           </div>
           <span class="p_price bold mr_tb_sm">Quantity:</span>
           <button class="btn btn_quan">-</button>
@@ -26,10 +51,26 @@ function CartCard() {
         </div>
       </div>
       <div class="ecomm_btns padding_sm">
-        <button class="btn_primary btn">
+        <button
+          onClick={() =>
+            productDispatch({
+              type: "ADD_TO_WISHLIST",
+              payload: { itemId: _id },
+            })
+          }
+          class="btn_primary btn"
+        >
           <i class="mr_sm fas fa-heart"></i>Add to wishlist
         </button>
-        <button class="btn_outline btn">
+        <button
+          onClick={() =>
+            productDispatch({
+              type: "REMOVE_FROM_CART",
+              payload: { itemId: _id },
+            })
+          }
+          class="btn_outline btn"
+        >
           <i class="mr_sm fa-solid fa-trash-can"></i>Remove from cart
         </button>
       </div>

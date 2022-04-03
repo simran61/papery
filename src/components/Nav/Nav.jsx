@@ -1,6 +1,7 @@
 import React from "react";
 import "./nav.css";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -56,10 +57,11 @@ function Nav() {
       <div className="nav_btm flex space_btw">
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
-        <a href="productListing/products.html">SHOP</a>
-        <a href="productListing/products.html">PRODUCT</a>
-        <a href="wishlist/wishlist.html">WISHLIST</a>
-        <a href="cartManagement/cart.html">ORDER</a>
+
+        {/* <a href="productListing/products.html">PRODUCTS</a> */}
+        <Link to={"/productListing"}>PRODUCTS</Link>
+        <Link to={"/wishlist"}>WISHLIST</Link>
+        <Link to={"/cart"}>CART</Link>
       </div>
     </nav>
   );
