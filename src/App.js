@@ -9,28 +9,22 @@ import { Logout } from "./pages/Auth/Logout";
 import { SignUp } from "./pages/Auth/SignUp";
 import { Routes, Route, Link } from "react-router-dom";
 import Mockman from "mockman-js";
+import { Profile } from "./pages/ProfilePage/Profile";
 function App() {
   return (
     <div className="App">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="about" element={<About />} /> */}
         <Route path="/productListing" element={<ProductListing />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/mockman" element={<Mockman />} />
-        {/* <Route path="about" element={<About />} /> */}
-        {/* <Route path="about" element={<About />} /> */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Logout />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
-      {/* <Home/> */}
-      {/* <ProductListing/> */}
-      {/* <SingleProduct/> */}
-      {/* <Wishlist/> */}
-      {/* <Cart/> */}
-      {/* <Login/> */}
-      {/* <Logout/> */}
-      {/* <SignUp/> */}
       <Footer />
     </div>
   );

@@ -14,13 +14,9 @@ function SalesCards({ item }) {
         <p className="p_discount_price mr_tb_sm grey_text strike bold">
           {costPrice}
         </p>
-        <span className="danger_color bold">{discountPrice}</span>
+        <span className="danger_color bold mr_sm">{discountPrice}</span>
         <div className="rating">
-          {/* <i className="yellow fa-solid fa-star"></i>
-          <i className="yellow fa-solid fa-star"></i>
-          <i className="yellow fa-solid fa-star"></i>
-          <i className="yellow fa-solid fa-star"></i>
-          <i className="yellow fa-solid fa-star"></i> */}
+          <i class="fa-solid fa-star color_primary mr_xsm"></i>
           {rating}
         </div>
       </div>

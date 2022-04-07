@@ -39,26 +39,24 @@ function Nav() {
           </a>
         </div>
         <div className="nav_md_left flex align_center">
-          <a href="./authentication/logout.html">
+          <Link to={"/login"}>
             <i className="fa-solid fa-arrow-right-from-bracket"></i>
-          </a>
-          <a href="./authentication/signup.html">
+          </Link>
+          <Link to={"/profile"}>
             <i className="fa-regular fa-user"></i>
-          </a>
+          </Link>
           <i className="fa-solid fa-magnifying-glass"></i>
-          <a href="./wishlist/wishlist.html">
+          <Link to={"/wishlist"}>
             <i className="fa-regular fa-heart"></i>
-          </a>
-          <a href="./cartManagement/cart.html">
+          </Link>
+          <Link to={"/cart"}>
             <i className="fa-solid fa-cart-arrow-down"></i>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="nav_btm flex space_btw">
-        <a href="#">HOME</a>
+        <Link to={"/"}>HOME</Link>
         <a href="#">ABOUT</a>
-
-        {/* <a href="productListing/products.html">PRODUCTS</a> */}
         <Link to={"/productListing"}>PRODUCTS</Link>
         <Link to={"/wishlist"}>WISHLIST</Link>
         <Link to={"/cart"}>CART</Link>
