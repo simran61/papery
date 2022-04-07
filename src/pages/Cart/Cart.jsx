@@ -18,7 +18,7 @@ function Cart() {
             <CartCard item={item} />
           ))}
         </div>
-        <CartTable />
+        {/* <CartTable /> */}
       </div>
     </div>
   );
