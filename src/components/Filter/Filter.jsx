@@ -9,7 +9,7 @@ function Filter() {
     <div className="filters mr_3 pd_sm">
       <div className="search_product flex space_btw">
         <input type="text" placeholder="Search products.." />
-        <i className="size_sm grey_text fa-solid fa-magnifying-glass"></i>
+        {/* <i className="size_sm grey_text fa-solid fa-magnifying-glass"></i> */}
       </div>
 
       <button
